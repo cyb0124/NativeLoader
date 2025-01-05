@@ -1,0 +1,17 @@
+[package]
+name = "NativeLoader"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+libc = { version = "0.2.169", default-features = false }
+
+[profile.release]
+strip = "symbols"
+panic = "abort"
+lto = "fat"
+codegen-units = 1
+opt-level=3

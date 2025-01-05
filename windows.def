@@ -1,0 +1,4 @@
+EXPORTS
+    Java_cyb0124_NativeLoader_allocPagesRW
+    Java_cyb0124_NativeLoader_wrapBuffer
+    Java_cyb0124_NativeLoader_setAndRunPagesRX
